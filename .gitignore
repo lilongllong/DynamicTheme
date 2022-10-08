@@ -1,0 +1,36 @@
+.DS_Store
+node_modules
+/public/cdn
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.stylelintcache
+
+# Editor directories and files
+.idea
+.fib
+# stylelint cache file
+.stylelintcache
+#.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# fib配置
+.fib
+
+# Test files
+coverage
+ut_gtest.xml
+/public/cdn
+/dist/**
+/.stylelintcache

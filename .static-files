@@ -1,0 +1,12 @@
+# 本文件定义了需要与index.html一起被部署的静态文件列表（使用Unix风格glob模式匹配语法）。
+# 默认部署灰度/正式环境时，只有index.html会被部署；如果存在该文件，则该文件中指定的文件也会被部署（目录结构也被保持）。
+# 匹配时基于输出目录（如dist、build等）作为根目录，请勿尝试匹配输出目录以外的文件。
+
+# 目前暂时把所有文件名里没有hash的都算进去
+downloads
+img/icons
+less
+favicon.ico
+manifest.json
+robots.txt
+service-worker.js

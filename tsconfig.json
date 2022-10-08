@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "sourceMap": true,
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "types": [
+      "webpack-env",
+      "jest",
+      // exceljs需要 node
+      "node"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "src/shims-tsx.d.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "babel.config.js",
+    ".eslintrc.js",
+    ".prettierrc.js",
+    ".postcss.config.jsg.js",
+    "jest.config.js",
+    "stylelint.config.js",
+    "vue.config.js",
+    "script",
+  ],
+  "rules": {
+    "no-unused-vars":"off",
+    "max-line-length": [
+      true,
+      {
+        "limit": 250,
+        "ignore-pattern": "^import |^export {(.*?)}",
+        "check-strings": true,
+        "check-regex": true
+      }
+    ]
+  }
+}
